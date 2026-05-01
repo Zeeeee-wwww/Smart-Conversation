@@ -32,18 +32,18 @@ Problem3:The assistant's audio output is captures by the microphone and treated 
 
   Flaw: The API pauses between audio chunks during natural speech, causing premature unmute. Essentially guessing when the AI stops rather than knowing for sure.
 
-  Result: ❌ Failed — mic would unmute mid-reply, still capturing assistant output as input.
+ ## Result: ❌ Failed — mic would unmute mid-reply, still capturing assistant output as input.
 
-  Attempt 2 (Codex)
+# Attempt 2 (Codex)
 
   Approach: Still mute on response.audio.delta, but defer the unmute check to the response.done event. This event is explicitly sent by the API when a complete response turn finishes. A       _wait_silence_end() method then waits an extra SILENCE_TIMEOUT before unmuting.
   
   Key insight: Use the API's built-in end-of-turn signal instead of guessing, and also added response.audio_transcript.done for text echo debugging.
 
-  Result: ✅ Success — reliable mute/unmute cycle with no feedback loop.
+ ## Result: ✅ Success — reliable mute/unmute cycle with no feedback loop.
 
-  Takeaway: The API already tells you when it's done speaking via response.done. Guessing with silence timeout on partial audio chunks is unreliable.
+ ### Takeaway: The API already tells you when it's done speaking via response.done. Guessing with silence timeout on partial audio chunks is unreliable.
 
-  AI key word(codex):现在我解决了这个问题，但是扬声器播放的回复会被拾取扰乱对话，修改方案也没有起到效果，帮我看看怎么改善。
+ #### AI key word(codex):现在我解决了这个问题，但是扬声器播放的回复会被拾取扰乱对话，修改方案也没有起到效果，帮我看看怎么改善。
   
 ```
