@@ -10,6 +10,7 @@ Problem1:Computer failed to recognize the mac device.(There's no response after 
     4. After uninstalling all of them, force shut down your PC by pressing the power button. Turn it back on, and Windows will automatically reinstall all the USB drivers.
 ```
 ->conversation_MiMo.py
+
 Problem2:TimeoutError: WebSocket connection could not be established within 5 seconds. Please check your network connection, firewall settings, or server status.
 
 ```markdown
