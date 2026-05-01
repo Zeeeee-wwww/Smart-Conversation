@@ -22,3 +22,5 @@ Problem2:TimeoutError: WebSocket connection could not be established within 5 se
     5	Alibaba Cloud AI	Corrected callbacks → callback parameter, upgraded model to qwen3.5-omni-plus-realtime, added audio output streaming	✅ Success — real-time voice dialogue working
 ```
 ->Mac_connected_Qwen.py
+
+Problem3:The assistant's audio output is captures by the microphone and treated as user input,causing the dialogue to loop or break.
