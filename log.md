@@ -9,7 +9,7 @@ Problem1:Computer failed to recognize the mac device.(There's no response after 
     3. Note: Your keyboard and mouse will stop working during this process, which is expected.
     4. After uninstalling all of them, force shut down your PC by pressing the power button. Turn it back on, and Windows will automatically reinstall all the USB drivers.
 ```
-
+->conversation_MiMo.py
 Problem2:TimeoutError: WebSocket connection could not be established within 5 seconds. Please check your network connection, firewall settings, or server status.
 
 ```markdown
@@ -20,3 +20,4 @@ Problem2:TimeoutError: WebSocket connection could not be established within 5 se
     4	DeepSeek	## Switch from WebSocket to HTTP recording-transcription API	Not attempted (user wanted real-time dialogue)
     5	Alibaba Cloud AI	Corrected callbacks → callback parameter, upgraded model to qwen3.5-omni-plus-realtime, added audio output streaming	✅ Success — real-time voice dialogue working
 ```
+->Mac_connected_Qwen.py
