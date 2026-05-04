@@ -51,7 +51,43 @@ Problem4:VSCode Remote SSH can't connect to DK-2500 Through LAN
 
 ```markdown
 
-1.Used powershell to check out the connection
-2.Turns out to be i ignored the password input position.
+# 1.Used powershell to check out the connection
+# 2.Turns out to be i ignored the password input position.
+```
+
+Problem5:When attempting to install Python packages system-wide on the DK2500 development board, pip returns the following error：
+
+```text
+error: externally-managed-environment
+
+× This environment is externally managed
+╰─> To install Python packages system-wide, try apt install
+    python3-xyz, where xyz is the package you are trying to install.
+```
+
+```markdown
+Solution:
+
+Use a Python virtual environment instead of installing packages globally.
+```
+
+```bash
+# 1. Ensure venv support is installed
+sudo apt install python3-full python3-venv -y
+
+# 2. Navigate to the project directory
+cd ~/voice-chat/Smart-Conversation
+
+# 3. Create a virtual environment
+python3 -m venv venv
+
+# 4. Activate the virtual environment
+source venv/bin/activate
+
+# 5. Install dependencies
+pip install dashscope certifi pyaudio
+
+# 6. Run the script
+python Mac_connected_Qwen.py
 ```
 
