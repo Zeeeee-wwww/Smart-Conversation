@@ -49,3 +49,9 @@ Problem3:The assistant's audio output is captures by the microphone and treated 
 ```
 Problem4:VSCode Remote SSH can't connect to DK-2500 Through LAN
 
+```markdown
+
+1.Used powershell to check out the connection
+2.Turns out to be i ignored the password input position.
+```
+
