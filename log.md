@@ -68,7 +68,7 @@ error: externally-managed-environment
 ```markdown
 Solution:
 
-Use a Python virtual environment instead of installing packages globally.
+# Use a Python virtual environment instead of installing packages globally.
 ```
 
 ```bash
