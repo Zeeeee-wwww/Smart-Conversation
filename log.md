@@ -100,7 +100,8 @@ Sollution:Install PipeWire or hardcode the ALSA device name in the code and rest
 Problem7:When committing the new code version,i've lost today's problem history also the committs 
 
 ```markdown
-To avoid losing commits in the future, always pull before pushing and avoid --force # Important!!!!!!!!
+# Important!!!!!!!!
+To avoid losing commits in the future, always pull before pushing and avoid --force 
 ```
 
 ```bash
@@ -111,3 +112,9 @@ git pull origin main --no-rebase   # pull remote changes first
 git push                           # then push
 ```
 
+Problem8:Choppy Audio Playback on DK2500
+When running the real-time voice conversation script on the DK2500 development board, the assistant's audio output is severely choppy — only the beginning and end of each response are audible, with the middle portion dropping out entirely.
+
+```markdown
+
+```
