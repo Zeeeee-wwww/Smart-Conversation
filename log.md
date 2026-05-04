@@ -47,3 +47,5 @@ Problem3:The assistant's audio output is captures by the microphone and treated 
  #### AI key word(codex):现在我解决了这个问题，但是扬声器播放的回复会被拾取扰乱对话，修改方案也没有起到效果，帮我看看怎么改善。
   
 ```
+Problem4:VSCode Remote SSH can't connect to DK-2500 Through LAN
+
