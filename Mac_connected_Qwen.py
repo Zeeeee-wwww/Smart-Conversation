@@ -61,6 +61,7 @@ class MyCallback(OmniRealtimeCallback):
             format=pyaudio.paInt16,
             channels=1,
             rate=SPEAKER_SAMPLE_RATE,
+            output_device_index=13,  # 用 default 设备
             output=True,
         )
 
@@ -147,6 +148,7 @@ if __name__ == "__main__":
             channels=MIC_CHANNELS,
             rate=MIC_SAMPLE_RATE,
             input=True,
+            input_device_index=13,  # 用 default 设备
             frames_per_buffer=MIC_FRAMES_PER_BUFFER,
         )
 
