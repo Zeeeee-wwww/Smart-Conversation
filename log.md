@@ -91,3 +91,23 @@ pip install dashscope certifi pyaudio
 python Mac_connected_Qwen.py
 ```
 
+Problem6：OSError: [Errno -9996] Invalid output device (no default output device) when opening PyAudio output stream.
+
+```markdown
+Sollution:Install PipeWire or hardcode the ALSA device name in the code and restart the board.->Successfully.
+```
+
+Problem7:When committing the new code version,i've lost today's problem history also the committs 
+
+```markdown
+To avoid losing commits in the future, always pull before pushing and avoid --force # Important!!!!!!!!
+```
+
+```bash
+bash
+git add .
+git commit -m "descriptive message"
+git pull origin main --no-rebase   # pull remote changes first
+git push                           # then push
+```
+
